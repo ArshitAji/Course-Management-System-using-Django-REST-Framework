@@ -1,0 +1,31 @@
+POST http://127.0.0.1:8000/courses/
+Content-Type: application/json
+
+{
+    "course_name": "Python Django Full Stack",
+    "course_duration": "6 Months",
+    "course_fee": 25000,
+    "instructor": "Arun",
+    "course_category": "Programming"
+}
+
+###
+GET http://127.0.0.1:8000/courses/
+
+###
+GET http://127.0.0.1:8000/courses/1/
+
+###
+PUT http://127.0.0.1:8000/courses/1/
+Content-Type: application/json
+
+{
+    "course_name": "Advanced Python Django",
+    "course_duration": "8 Months",
+    "course_fee": 30000,
+    "instructor": "Arun",
+    "course_category": "Web Development"
+}
+
+###
+DELETE http://127.0.0.1:8000/courses/1/
